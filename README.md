@@ -1,6 +1,6 @@
-# Goatstudio Django rest template
+# Django chat app - Goatstudio rest template
 <span style="color:red;font-weight:700;font-size:100px">
-    Windows are not supported.
+    Windows is not supported.
 </span>
 
 ## Requirements
@@ -19,8 +19,6 @@
 
 ## Install python modules
 If you use Macbook M1 please follow [this guide](https://pypi.org/project/mysqlclient/) to install mysqlclient. 
-
-After that, join Goatstudio VPN and install requirements
 
 ```shell
 pip install -r requirements.txt
@@ -70,6 +68,10 @@ Secure is `False`.
 If you test with postman, you have to change SESSION_COOKIE_SECURE to `False`. Otherwise, you have to modify SameStime
 in `Postman cookie` to None after login.
 
-## APIs Documentation
+## How to use
 
-Please read at [Goatstudio-Backend.yaml](Goatstudio-Backend.yaml)
+Create 2 superusers, then open 2 different browsers.
+Go to {HOST}/api/ and login on both browsers to start chatting.
+
+[]
+
