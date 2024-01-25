@@ -3,6 +3,10 @@ from channels.generic.websocket import AsyncWebsocketConsumer
 
 
 class ChatConsumer(AsyncWebsocketConsumer):
+    def __init__(self, *args, **kwargs):
+        super().__init__(args, kwargs)
+        self.roomGroupName = None
+
     async def connect(self):
         self.roomGroupName = "group_chat_gfg"
         await self.channel_layer.group_add(
